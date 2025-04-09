@@ -28,7 +28,7 @@ Step 5:  Configure EU Data Boundary
 - Use the CMD in the Windows VM to use the following Azure CLI commands in a CMD shell in the WinVM
     - az login --allow-no-subscriptions  # with the new local user setup above and noted ObjectId
     - DATA_BOUNDARY_TENANT_ADMINISTRATOR_ROLE_ID="d1a38570-4b05-4d70-b8e4-1100bcf76d12"
-    - az role assignment create --assignee-object-id "<yournewuserObjectId>" --assignee-principal-type "User" --role "d1a38570-4b05-4d70-b8e4-1100bcf76d12" --scope "/"
+    - az role assignment create --assignee-object-id "ObjectId" --assignee-principal-type "User" --role "d1a38570-4b05-4d70-b8e4-1100bcf76d12" --scope "/"
     - az data-boundary create --data-boundary EU --default default
 
 The output from the last command for reference was: 
