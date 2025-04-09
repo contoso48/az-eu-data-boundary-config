@@ -13,6 +13,7 @@ Step 1:  Use an existing Azure Portal to create new EntraID tenant in EU Country
 Step 2: Create a local user in the new tenant. 
  - Assign them "global administrator"  (may be optional)
  - Find out your new user's ObjectId
+ - BTW - alternative ways such as a Service Principal are OK to, but use a "User" for simplicity
 
 Step 3: Assign them "Access Management for all subscriptions" permission 
  - Log in a new Azure Portal session with the new user
